@@ -6,7 +6,7 @@ export const Logo = () => {
     <div className='flex items-center'>
         <Link to="/" className='flex items-center'>
             <FcProcess size={40} />
-            <h1 className='ms-2 text-2xl'>ReBuy</h1>
+            <h1 className='ms-2 text-2xl text-white'>ReBuy</h1>
         </Link>
     </div>
   )

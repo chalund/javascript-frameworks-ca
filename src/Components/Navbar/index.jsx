@@ -20,12 +20,11 @@ export const Navbar = () => {
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
-    
     }
 
   return (
     <>
-    <nav className="flex w-1/3 justify-end uppercase">
+    <nav className="w-1/3 flex justify-end">
         <div className="hidden w-full justify-between md:flex">
             <NavLinks />
         </div>
@@ -34,14 +33,13 @@ export const Navbar = () => {
                 {isOpen ? <IoClose size={30}/> : <IoIosMenu size={30}/> }
             </button>
         </div>
-    </nav>
-    {isOpen && (
-        <div className="flex basis-full flex-col items-center mt-3 space-y-3 p-2">
-            <NavLinks />
-        </div>
-    )}
+        </nav>
+        {isOpen && (
+            <div className="flex basis-full flex-col items-center">
+                <NavLinks />
+            </div>
+        )}
     </>
- 
   )
 }
 

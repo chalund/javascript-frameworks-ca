@@ -4,7 +4,7 @@ import { Logo } from "../Logo"
 
 export const Header = () => {
   return (
-   <div className="bg-orange-300 sticky top-0 flex-wr z-[1] mx-auto flex w-full flex-wrap items-center justify-between  p-[2em] uppercase backdrop-blur-[100px]">
+   <div className="bg-orange-300 sticky top-0 z-[20] flex-wrap  mx-auto flex w-full items-center justify-between  border-b border-gray-500 p-2">
         <Logo />
         <Navbar />
    </div>
