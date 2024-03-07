@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom"
 
+
+
 export const Navbar = () => {
-  return (
-    <nav>
-        <Link to="/">Logo</Link>
+
+    
+    const Navlinks  =
+    <>
+    <div>
         <ul>
             <li>
                 <Link to="/">Home</Link>
@@ -15,6 +19,18 @@ export const Navbar = () => {
                 <Link to="/contact">Contact</Link>
             </li>
         </ul>
+    </div>
+
+    
+    </>
+
+
+
+
+  return (
+    <nav>
+
+      
     </nav>
   )
 }
