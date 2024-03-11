@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { LuMenu } from "react-icons/lu";
 import { IoCloseOutline } from "react-icons/io5";
+import { FcProcess } from "react-icons/fc";
 
 export const Nav = () => {
   const [click, setClick] = useState(false);
@@ -26,9 +27,10 @@ export const Nav = () => {
   return (
     <nav className="sticky top-0 z-50">
       <div className="bg-slate-900 h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4">
-        <div className="flex items-center flex-1">
-          <span className="text-3xl font-bold"> LOGO</span>
-        </div>
+        <Link to="/" className='flex items-center'>
+              <FcProcess size={40} />
+              <h1 className='ms-3 text-2xl text-white hover:text-fuchsia-700 cursor-pointer'>ReBuy</h1>
+          </Link>
         <div className="md:flex flex-1 items center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-[18px]">
